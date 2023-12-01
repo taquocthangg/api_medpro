@@ -1,25 +1,47 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "api_nodejs",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "username": "postgres",
+    "password": "Thang-Medpro123456@",
+    "database": "postgres",
+    "host": "db.rvebfoicykaursfmzktx.supabase.co",
+    "dialect": "postgres",
     "logging": false,
+    "dialectOptions": {
+      "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+      }
+    },
     "timezone": "+07:00"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "postgres",
+    "password": "Thang-Medpro123456@",
+    "database": "postgres",
+    "host": "db.rvebfoicykaursfmzktx.supabase.co",
+    "dialect":"postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+      }
+    },
+    "timezone": "+07:00"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "postgres",
+    "password": "Thang-Medpro123456@",
+    "database": "postgres",
+    "host": "db.rvebfoicykaursfmzktx.supabase.co",
+    "dialect": "postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+         "require": true,
+         "rejectUnauthorized": false
+      }
+    },
+    "timezone": "+07:00"
   }
 }

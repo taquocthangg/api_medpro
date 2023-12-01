@@ -1,9 +1,15 @@
 const { Sequelize } = require('sequelize');
 // Option 3: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('api_nodejs', 'root', null, {
-    host: 'localhost',
-    dialect: 'mysql',
-    logging: false
+const sequelize = new Sequelize(process.env.POSTGRES_DATABASE, process.env.POSTGRES_USER, process.env.POSTGRES_PASSWORD, {
+    host: process.env.POSTGRES_HOST,
+    dialect: 'postgres',
+    logging: false,
+    dialectOptions: {
+        "ssl": {
+           "require": true,
+           "rejectUnauthorized": false
+        }
+      }
 });
 
 
